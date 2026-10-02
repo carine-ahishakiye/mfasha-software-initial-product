@@ -5,7 +5,6 @@
 > **Track:** Machine Learning – Initial Software Product / MVP demonstration
 
 
-
 ## 1. Description
 
 Many Rwandan farmers need quick, trustworthy agricultural advice in Kinyarwanda, but extension officers are limited and most digital resources are in English. MFASHA lets a user type a question in Kinyarwanda (for example *"Inka ifite impiswi navura nte?"*) and returns the most relevant answer from a curated knowledge base.
@@ -19,7 +18,9 @@ Many Rwandan farmers need quick, trustworthy agricultural advice in Kinyarwanda,
 ## 2. GitHub Repository
 
 🔗 **Repo link:** `https://github.com/carine-ahishakiye/mfasha-software-initial-product.git`
+## Video Demo
 
+🎥 **Link:** `https://youtu.be/Dk9rJaVx2ZI`
 ## 3. Dataset
 
 - **Source:** [`C4IR-RW/kinya-ag-retrieval`](https://huggingface.co/datasets/C4IR-RW/kinya-ag-retrieval) on Hugging Face (Kinyarwanda agricultural retrieval dataset).
@@ -49,9 +50,9 @@ Many Rwandan farmers need quick, trustworthy agricultural advice in Kinyarwanda,
 | `fig_question_length.png` | Question length (words) before vs after cleaning |
 | `fig_confusion_matrix.png` | Row-normalised confusion matrix of the topic classifier on the test set |
 
-![Data overview]![alt text](image-2.png)
-![Question length]![alt text](image-1.png)
-![Confusion matrix](![alt text](image.png))
+![Data overview](docs/images/fig_data_overview.png)
+![Question length](docs/images/fig_question_length.png)
+![Confusion matrix](docs/images/fig_confusion_matrix.png)
 
 ## 5. Model Architecture
 
@@ -206,11 +207,9 @@ demo.launch(share=True)
 | **5. Continuous improvement** | Review `unanswered.csv` regularly, add new passages with agricultural experts, have a Kinyarwanda speaker validate the topic labels, and retrain |
 | **6. Longer-term** | Evaluate Kinyarwanda neural embedding models, add voice input/output, and partner with MINAGRI/extension services for content validation |
 
-## 11. Video Demo
 
-🎥 **Link:** `https://...`
 
-## 12. Repository Structure
+## Repository Structure
 
 ```
 ├── MFASHA_Chatbot.ipynb          # Full pipeline: data, models, evaluation, Gradio app
